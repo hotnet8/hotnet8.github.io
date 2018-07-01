@@ -1,0 +1,234 @@
+// Custom styles.
+// 背景图片
+body {
+  min-width: 375px;
+  background: url("/assets/background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+body:before {
+  content: ' ';
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("/assets/background.jpg") center 0 no-repeat;
+  background-size: cover;
+}
+// 标题背景
+.brand {
+  background: none;
+}
+// 标题文字
+.site-title {
+  font-size: 35px;
+  color: #000;
+}
+// 导航栏
+.menu .menu-item a:hover {
+    border-bottom-color: #555;
+}
+.site-nav {
+  position: relative;
+  top: initial;
+}
+.site-subtitle {
+  color: #555;
+}
+.main-inner {
+  width: 800px;
+}
+.post-block {
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+// 文章填充、边距等
+.post-block {
+  padding-top: 20px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.55);
+}
+// 文章内图片边距
+.posts-expand .post-body .fancybox img {
+    margin: 0;
+}
+// 文章底部距离
+.posts-expand {
+    padding-top: 0;
+}
+// 首页文章内容与标题的距离
+.post-body {
+  margin-top: 10px;
+}
+// 阅读更多按钮
+.post-button {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+// 侧栏
+.sidebar {
+  background: rgba(34, 34, 34, 0.9);
+}
+// 侧栏二维码
+#sidebar > div.sidebar-inner #wechat_subscriber_qcode {
+  width: 140px !important;
+}
+// 首页文章预览图
+.img-topic {
+    border: 0 !important;
+    width: 95%;
+    height: auto;
+}
+// 相册样式，统一大小
+.post-gallery .post-gallery-img {
+  margin: 5px 10px 5px 10px;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+}
+.post-gallery {
+  text-align: center;
+}
+.post-gallery-row {
+  margin: auto;
+}
+// fancybox 打开图片后，去除边框
+.fancybox-skin {
+  padding: 0 !important;
+}
+//  扫码付款
+#rewardButton span {
+  border-radius: 0;
+  background: #555;
+}
+#rewardButton span:hover {
+  background: #e0e0e0;
+  color: #555;
+}
+// footer
+.footer {
+    color: #fff;
+}
+.post-footer .post-eof {
+  display: none;
+}
+.category-all-title, .tag-cloud-title {
+  margin-top: 35px;
+}
+// 分类页面
+.category-all-page {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.posts-collapse {
+  margin-left: 30px;
+}
+// 归档
+.archive {
+  padding: 20px 0;
+}
+.archive .post-type-normal {
+  margin: 0;
+}
+.archive .post-type-normal .post-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+// 标签云
+.tag {
+  padding: 20px 0;
+}
+.tag .post-type-normal {
+  margin: 0;
+}
+.tag .post-type-normal .post-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+// 分类
+.category {
+  padding: 20px 0;
+}
+.category .post-type-normal {
+  margin: 0;
+}
+.category .post-type-normal .post-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+// 时间轴
+.posts-collapse::after {
+  background: #e0e0e0;
+}
+.posts-collapse .collection-title {
+  margin: 30px 0;
+}
+// 移动端
+@media (max-width: 1023px) {
+  .main-inner {
+      width: 700px;
+  }
+}
+@media (max-width: 767px) {
+  .main-inner {
+    width: 440px;
+  }
+  .menu a {
+    color: #000000 !important;
+  }
+  #sidebar-dimmer {
+    opacity: 0 !important;
+  }
+  #main {
+    margin-top: -50px;
+    padding-bottom: 100px;
+  }
+  .img-topic {
+    width: 300px;
+    height: auto;
+  }
+  .post-gallery .post-gallery-img {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+@media (max-width: 460px) {
+  .main-inner {
+    width: 80%;
+  }
+  .post-body {
+    margin-top: 20px;
+  }
+  .img-topic {
+    width: 200px;
+    height: auto;
+  }
+  .post-title-link {
+    font-size: 80%;
+  }
+  .post-gallery .post-gallery-img {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .posts-expand {
+    margin: 0;
+  }
+  .posts-expand .post-tags a {
+    font-size: 9px;
+  }
+  .post-title {
+    font-size: 16px;
+  }
+  .post-nav-item a {
+    font-size: 9px;
+  }
+  #resCanvas {
+    width: 250px;
+  }
+}
