@@ -1816,7 +1816,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7c5c4a;
+  background: #bfff93;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2707,6 +2707,10 @@ body:before {
 .menu .menu-item a:hover {
   border-bottom-color: #555;
 }
+.site-nav {
+  position: relative;
+  top: initial;
+}
 .site-subtitle {
   color: #555;
 }
@@ -2741,17 +2745,8 @@ body:before {
 .sidebar {
   background: rgba(34,34,34,0.9);
 }
-.site-author-image {
-  border: 2px solid #fff;
-  border-radius: 100%;
-  transition: transform 1s ease-out;
-}
-.site-author-image img:hover {
-  -webkit-transform: rotateZ(360deg);
-  -moz-transform: rotateZ(360deg);
-  -ms-transform: rotateZ(360deg);
-  -o-transform: rotateZ(360deg);
-  transform: rotateZ(360deg);
+#sidebar > div.sidebar-inner #wechat_subscriber_qcode {
+  width: 140px !important;
 }
 .img-topic {
   border: 0 !important;
